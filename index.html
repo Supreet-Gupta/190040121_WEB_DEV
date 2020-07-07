@@ -1,70 +1,139 @@
 <!DOCTYPE html>
 <html>
-<body style="background-color:skyblue">
-<nav style="font-size:25px;text-align:right;color:red;">
-<a href=""> My Courses</a>
-<a href=""> TV Shows</a>
-<a href=""> Memes</a>
-</nav>
-<!-- Didn't paste any links on the navbar. Just made one for the sake of having a navbar -->
-<style>
-#aboutme{
-color:blue;
-background-color:violet;
-font-size:30px;
-text-align:center;
-}
-</style>
-<style>
-.headings{
-color:blue;
-font-size:20px;
-text-align:center;
-}
-.list{
-color:green;
-font-size:15px;
-}
-</style>
-<h1 id="aboutme"><u>About me</u></h1>
-<p style="color:red;font-size:20px">I'm Supreet Gupta, a Civil engineering sophomore at IITBombay.</p>
+    <style>
+        body{
+          background-color:crimson;  
+        }
+        h1{
+            margin: auto;
+            border-style: double;
+            border-color:limegreen;
+            border-width: 5px;
+            width: 20%;
+            padding: 5px;
+            color:goldenrod;
+            background-color: indigo;
+            border-radius: 20px;
+            text-align: center;
+            animation-name: h1;
+            animation-duration: 5s;
+            animation-delay: 0s;
+            animation-iteration-count:3;
+            animation-timing-function: ease-out;
+        }
+        h2{
+            border-style: groove;
+            font-size: 30px;
+            border-color:burlywood;
+            border-width: 3px;
+            border-radius: 10px;
+            width:25%;
+            margin: auto;
+            text-align:center;
+        }
+        p{
+            font-size:25px;
+        }
+        a{
+            color:magenta;
+        }
+        h3{
+            border-style: groove;
+            font-size: 30px;
+            border-color:burlywood;
+            border-width: 3px;
+            border-radius: 10px;
+            width:30%;
+            margin:auto;
+            text-align:center; 
+           
+        }
+        @keyframes h1 {
+        from {background-color:indigo;}
+        to {background-color:lightslategrey;}
+        }
+        ul{
+            list-style-type:square;
+        }
+        ol{
+            list-style-type: upper-roman;
+            list-style-position: inside;
+        }
+        .li1{
+            display: inline;
+            float: right;
+            background-color: black;
+            border-right: 1px solid wheat;
+        }
+        
+        
+        li a:hover:not(.active) {
+        background-color:darkslategray;
+        }
 
-<h2 class="headings"><i>MY Hobbies</i> </h2>
-<p style="font-size:15px">I am quite passionate about<b> reading novels, writing, listening to music and editing videos</b>.</p>
+        .active {
+        background-color: #4CAF50;
+        }
+        nav{
+            position:fixed;
+            top:0px;
+            width:100%;
+        }
+        img{
+            display:block;
+            margin:auto;
+        }
+    </style>
+    <body>
+    <nav style="font-size:25px;text-align: right; list-style-type: none;">
+        <li class="li1"><a href="" ; style= "color:white; padding: 20px;">About Me</a></li>
+        <li class="li1"><a href="" ; style= "color:white; padding: 20px;"> My Courses</a></li>
+        <li class="li1"><a href=""; style= "color:white; padding: 20px;"> TV Shows</a></li>
+        <li class="li1"><a href=""; style= "color:white; padding: 20px;"> Memes</a></li>
+    </div>
+    </nav>
+    
+    <h1 style="margin-top: 20px;">About me</h1>    
+    <p>I'm Supreet Gupta, a Civil engineering sophomore at IITBombay.</p>
 
-<h3 class="headings"><i>Ambitions</i></h3>
-<p style="font-size:15px">I really don't have any major ambitions at the moment but in the ones that I do have I would say that building this basic website into an exceptional one would be prominent :).</p> 
+    <img src="supreet.jpg" width="250" height="330" alt="Supreet Gupta">
 
-<h4 class="headings"><i>
-<a href="https://www.aero.iitb.ac.in/satlab/index.php"> Student Satellite Program</a> </i></h4>
-<p style="font-size:15px">I'm a part of the Non-Technical Team of the Student Satellite Program at IITB. My work includes witing blogs, managing website content,etc.</p>
 
-<div class="list">
+    <h2 style="margin-top: 20px;">My hobbies</h2>
+    <p>I am quite passionate about<b> reading novels, writing, listening to music and editing videos</b>.</p>
 
-<h5 class="headings"><i> Social media</i></h5>
-<ul>
-<li><a href="https://www.facebook.com/supreet.gupta.5454">Facebook</a></li>
-<li><a href="https://www.instagram.com/rnrnrnrn1234789/">Instagram</a></li>
-<li><a href="https://in.linkedin.com/in/supreet-gupta-33590a190?trk=people-guest_people_search-card">LinkedIn</a></li>
-</ul>
+    <h2>Ambitions</h3>
+    <p>I really don't have any major ambitions at the moment but in the ones that I do have I would say that building this basic website into an exceptional one would be prominent :).</p>
+   
+     
+    <h3>
+        <a href="https://www.aero.iitb.ac.in/satlab/index.php"; style= "color:white;"> Student Satellite Program</a> </h4>
+        </h3>
+        <p>I'm a part of the Non-Technical Team of the Student Satellite Program at IITB. My work includes witing blogs, managing website content,etc.</p>
+        
+        
 
-<h6 class="headings"><i>My favourtite novels</i></h6>
-<ol>
-<li>1984</li>
-<li>The Murder of Roger Ackroyd</li>
-<li>Angels and Demons</li>
-<li>The Girl on the Train</li>
-<li>Harry Potter Series</li>
-<li>The Da Vinci Code</li>
-</ol>
-</div>
+    <h3>My favourite novels</h6></h3>
+        <ol style="font-size: 25px;">
+        <li>1984</li>
+        <li>The Murder of Roger Ackroyd</li>
+        <li>Angels and Demons</li>
+        <li>The Girl on the Train</li>
+        <li>Harry Potter Series</li>
+        <li>The Da Vinci Code</li>
+        </ol> 
+    
+  
+    <h2> Social media</h5>
+        <ul style="font-size: 25px;">
+        <li><a href="https://www.instagram.com/rnrnrnrn1234789/"; style= "color:mediumslateblue;" >Facebook</a></li>
+        <li><a href="https://www.instagram.com/rnrnrnrn1234789/"; style= "color:mediumslateblue;">Instagram</a></li>
+        <li><a href="https://in.linkedin.com/in/supreet-gupta-33590a190?trk=people-guest_people_search-card"; style= "color:mediumslateblue;">LinkedIn</a></li>
+        </ul>    
+    <footer>
+            <p>Contact: supreetgupta2002@gmail.com<br>
+            Adress: Room313, Hostel16B, IITBombay, Mumbai PIN-400076.
+    </footer>
 
-<img src="supreet.jpg" width="250" height="330" alt="Supreet Gupta">
-
-<footer>
-<p>Contact: supreetgupta2002@gmail.com<br>
-Adress: Room313, Hostel16B, IITBombay, Mumbai PIN-400076.
-</footer>
-
-</body>
+    </body>
 </html>
