@@ -1,9 +1,11 @@
-
 <!DOCTYPE html>
 <html>
+    <head>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
     <style>
         body{
-          background-color:crimson;  
+          background-color:wheat;  
         }
         h1{
             margin: auto;
@@ -16,14 +18,24 @@
             background-color: indigo;
             border-radius: 20px;
             text-align: center;
-            animation-name: h1;
-            animation-duration: 5s;
-            animation-delay: 2s;
-            animation-iteration-count:3;
-            animation-timing-function: ease-out;
-            text-shadow: 2px 2px red;
+            ;
         
         }
+        ul.social {
+	list-style: none;
+	display: inline;
+	
+}
+ul.social li {
+	display: inline;
+	margin: 0 5px;
+}
+
+.social li a {
+    color: gray;
+}
+
+
         h2{
             border-style: groove;
             font-size: 30px;
@@ -33,7 +45,7 @@
             width:25%;
             margin: auto;
             text-align:center;
-            text-shadow: 0 0 3px red, 0 0 5px blue;
+           
         }
         p{
             font-size:25px;
@@ -50,35 +62,12 @@
             width:30%;
             margin:auto;
             text-align:center; 
-            text-shadow: 0 0 3px red, 0 0 5px blue;
+            
            
         }
-        @keyframes h1 {
-        from {background-color:indigo;}
-        to {background-color:lightslategrey;}
-        }
-        ul{
-            list-style-type:square;
-        }
-        ol{
-            list-style-type: upper-roman;
-            list-style-position: inside;
-        }
-        .li1{
-            display: inline;
-            float: right;
-            background-color: black;
-            border-right: 1px solid wheat;
-        }
+      
         
-        
-        li a:hover:not(.active) {
-        background-color:darkslategray;
-        }
-
-        .active {
-        background-color: #4CAF50;
-        }
+     
         nav{
             position:fixed;
             top:0px;
@@ -88,37 +77,63 @@
             display:block;
             margin:auto;
         }
+        input[type=text] {
+            width: 50%;
+            padding: 12px 12px 12px 5px;
+            margin: 10px 0;
+            box-sizing: border-box;
+            border-radius: 3px;
+            resize: none;
+        }
+        input[type=submit] {
+            background-color:darkgray;
+            color:black;
+            padding: 10px 15px;
+            margin: 2px;
+            border-radius: 4px;
+            cursor: hand;
+        }
+        label{
+            color:black;
+            font-size: 20px;
+        }
     </style>
+    </head>
+    <title>
+        My webpage!
+    </title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <body>
-    <nav style="font-size:25px;text-align: right; list-style-type: none;">
-        <li class="li1"><a href="" ; style= "color:white; padding: 20px;">About Me</a></li>
-        <li class="li1"><a href="" ; style= "color:white; padding: 20px;"> My Courses</a></li>
-        <li class="li1"><a href=""; style= "color:white; padding: 20px;"> TV Shows</a></li>
-        <li class="li1"><a href=""; style= "color:white; padding: 20px;"> Memes</a></li>
+    <nav class="navbar navbar-expand-sm  bg-dark  " >
+        <div class="nav-item"><a class="nav-link" href="#about">About Me</a></div>
+        <div class="nav-item"><a class="nav-link" href="#hobbies">My hobbies</a></div>
+        <div class="nav-item"><a class="nav-link" href="#ambitions">Ambitions</a></div>
+        <div class="nav-item"><a class="nav-link" href="#novels">Novels</a></div>
+        <div class="nav-item"><a class="nav-link" href="#contact">Contact me</a></div>
+    
     </div>
     </nav>
     
-    <h1 style="margin-top: 20px;">About me</h1>    
+    <div id="about" class="container section">
+    <h1 " >About me</h1>    
     <p>I'm Supreet Gupta, a Civil engineering sophomore at IITBombay.</p>
-
+</div>
     <img src="supreet.jpg" width="250" height="330" alt="Supreet Gupta">
 
-
+    <div id="hobbies"></div>
     <h2 style="margin-top: 20px;">My hobbies</h2>
     <p>I am quite passionate about<b> reading novels, writing, listening to music and editing videos</b>.</p>
-
+    <div id="ambitions"></div>   
     <h2>Ambitions</h3>
     <p>I really don't have any major ambitions at the moment but in the ones that I do have I would say that building this basic website into an exceptional one would be prominent :).</p>
    
      
-    <h3>
-        <a href="https://www.aero.iitb.ac.in/satlab/index.php"; style= "color:white;"> Student Satellite Program</a> </h4>
-        </h3>
-        <p>I'm a part of the Non-Technical Team of the Student Satellite Program at IITB. My work includes witing blogs, managing website content,etc.</p>
+    
         
-        
-
-    <h3>My favourite novels</h6></h3>
+    <div id="novels"></div>    
+    <h3 >My favourite novels</h6></h3>
         <ol style="font-size: 25px;">
         <li>1984</li>
         <li>The Murder of Roger Ackroyd</li>
@@ -127,18 +142,39 @@
         <li>Harry Potter Series</li>
         <li>The Da Vinci Code</li>
         </ol> 
+   
+    <div id="contact"></div>
+    <h3> Contact me</h3>
     
-  
-    <h2> Social media</h5>
-        <ul style="font-size: 25px;">
-        <li><a href="https://www.instagram.com/rnrnrnrn1234789/"; style= "color:mediumslateblue;" >Facebook</a></li>
-        <li><a href="https://www.instagram.com/rnrnrnrn1234789/"; style= "color:mediumslateblue;">Instagram</a></li>
-        <li><a href="https://in.linkedin.com/in/supreet-gupta-33590a190?trk=people-guest_people_search-card"; style= "color:mediumslateblue;">LinkedIn</a></li>
-        </ul>    
-    <footer>
-            <p>Contact: supreetgupta2002@gmail.com<br>
-            Adress: Room313, Hostel16B, IITBombay, Mumbai PIN-400076.
-    </footer>
+        
+        <form action="https://formspree.io/mjvajkzk" method="POST" target="_self">
+            
+            <label for="name"> Name:</label><br>
+            <input type="text" id="name" name="name" placeholder="Your Name"><br>
+            <label for="mail">E-mail id:</label><br>
+            <input type="text" name="mail" placeholder="Mail id"/><br>
+            <label for="message">Message:</label><br>
+            <textarea name="message" placeholder="Your message for me" style="height: 150px; width:50%; border-radius: 4px; border-style: solid;box-sizing: border-box;"></textarea>
+            <br>    
+            <input type="submit" value="Submit"><br>
+            
+          </form>
 
+        
+    
+    
+    <footer style="background-color:black;">
+        <div class="bottom">
+            <div class="text-center" style="text-align: ;">
+                <ul class="social social-circle" style="display: inline-block;" >
+                <li><a href="https://www.facebook.com/" class="facebook" title="Facebook"><i class="fa fa-lg fa-facebook"></i></a></li>
+                <li><a href="https://www.instagram.com/rnrnrnrn1234789/" class="instagram" title="Instagram"><i class="fa fa-lg fa-instagram"></i></a></li>
+                <li><a href="https://in.linkedin.com/in/supreet-gupta-33590a190?trk=people-guest_people_search-card" class="linkedin" title="Linkedin"><i class="fa fa-lg fa-linkedin"></i></a></li>
+                </ul> 
+            </div>
+            <p style="text-align: center; font-size: 15px;"> Created with <i class="fa fa fa-heart" style="color: red;"></i> by Supreet Gupta </p>
+        </div>
+    </footer>
+    
     </body>
 </html>
